@@ -1,6 +1,6 @@
 module dmux8
   #(
-    parameter N=4
+    parameter N = 4
   )
   (
     input [N-1:0] d,
@@ -12,6 +12,5 @@ module dmux8
   dmux a (.s({1'b0,s[2]}), .d(d), .y0(d0), .y1(d1));
   dmux b (.s(s[1:0]), .d(d0), .y0(y0), .y1(y1), .y2(y2), .y3(y3));
   dmux c (.s(s[1:0]), .d(d1), .y0(y4), .y1(y5), .y2(y6), .y3(y7));
-  
-  
+
 endmodule
