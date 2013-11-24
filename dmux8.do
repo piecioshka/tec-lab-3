@@ -1,7 +1,7 @@
 restart -nowave -force
 add wave -radix unsigned *
 
-force d 10#9 0 
+force d 10#9 0
 run
 force s 10#0 0
 run
@@ -19,3 +19,4 @@ force s 10#6 0
 run
 force s 10#7 0
 run
+
